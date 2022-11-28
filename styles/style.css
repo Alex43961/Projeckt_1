@@ -7,7 +7,12 @@
 
 @font-face {
 	font-family: "primary-light";
-	src: url(../public/fonts/Gotham-Light.ttf);
+	src: url(../public/fonts/Lato);
+}
+
+@font-face {
+	font-family: "primary-normal";
+	src: url(../public/fonts/Anton/Anton-Regular.ttf);
 }
 
 * {
@@ -23,6 +28,10 @@ a {
 
 li {
 	list-style-type: none;
+}
+
+.body {
+	width: 100%;
 }
 
 .header {
@@ -53,4 +62,43 @@ li {
 	padding: .8rem 2rem;
 	border-radius: .3rem;
 	border: none;
+}
+
+.main {
+	display: grid;
+	grid-template: 1fr 1fr 1fr/1fr;
+
+}
+
+.wrapper__tittle {
+	width: 100%;
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns: auto auto auto;
+
+	/*align-items: center;
+	justify-content: center;*/
+	border-bottom: 1px solid #292929;
+}
+
+.vintage1 {
+	width: 430px;
+	padding-top: 110px;
+	display: grid;
+
+}
+
+.vintage2 {
+	width: 430px;
+	padding-top: 100px;
+	display: grid;
+
+}
+
+.title__main {
+	font-size: 90px;
+
+	text-transform: uppercase;
+	color: #925FF0;
+	font-family: primary-normal;
 }
