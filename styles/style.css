@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: "primary";
-	src: url(../public/fonts/Gotham-Thin.ttf);
+	src: url(../public/fonts/Gotham-Light.ttf);
 }
 
 @font-face {
@@ -67,6 +67,7 @@ li {
 .main {
 	display: grid;
 	grid-template: 1fr 1fr 1fr/1fr;
+	background-color: var(--primary-bg);
 
 }
 
@@ -97,8 +98,56 @@ li {
 
 .title__main {
 	font-size: 90px;
-
 	text-transform: uppercase;
 	color: #925FF0;
 	font-family: primary-normal;
+}
+
+.history__autor__wrapper {
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	padding-left: 80px;
+}
+
+.history__autor {
+	width: 625px;
+	display: grid;
+	grid-template: 1fr/1fr;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.name__autor {
+	font-family: primary-normal;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 64px;
+	color: #292929;
+	text-transform: uppercase;
+}
+
+.line {
+	background-color: #A87FF3;
+	width: 90px;
+	height: 42px;
+}
+
+.history__autor__text {
+	font-family: primary;
+	font-weight: 400;
+	font-size: 16px;
+	align-items: center;
+	letter-spacing: -0.05em;
+	text-transform: capitalize;
+	margin-top: 60px;
+}
+p {
+	margin-top: 20px;
+}
+
+.photo {
+	border: #292929 solid 3px;
 }
